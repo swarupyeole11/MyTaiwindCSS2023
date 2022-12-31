@@ -6,16 +6,90 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<!-- Flex box Tutorial -->
+<!-- Flex box Tutoria -->
 <body>
   
-<!-- By default  *flex occupies whole row and column by content* and  flex-row and flex-nowrap -->
+<!-- Justify tutorial -->
 
-<!-- flex-nowrap : it means it will compress the width of the elements and shift text accordingly
-     flex-warp : it means it will not compress width of the elements/itenms
- -->
+<br>
+<br>
+<h4><strong>Justify In Row</strong></h4>
+<div class="bg-black h-2"></div>
+<br>
+<br>
 
-<div class="flex flex-nowrap">
+<!--  1. justify start -->
+<div class="flex flex-row justify-start">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+  <div class="p-2 bg-red-300">Block4 </div>
+</div>
+
+<br>
+
+<!-- 2. justify end : pushes at end -->
+<div class="flex flex-row justify-end">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+  <div class="p-2 bg-red-300">Block4 </div>
+</div>
+
+<br>
+
+<!-- 3. justify center :pushes boxes at center -->
+<div class="flex flex-row justify-center">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+  <div class="p-2 bg-red-300">Block4 </div>
+</div>
+
+<br>
+
+
+<!-- 4. justify between : establishes equal empty space between each box out of the space not occupied by the blocks-->
+<div class="flex flex-row justify-between">
+  <div class="p-2 bg-yellow-300">Block1 is a bit big  </div>
+  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+  <div class="p-2 bg-red-300">Block4 </div>
+</div>
+
+<br>
+
+<!-- 5. justify around : establishes equal empty space between each box out of the space not occupied by the blocks also at the start and end exaclty half the space between the blocks is left-->
+<div class="flex flex-row justify-around">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+ 
+</div>
+
+<br>
+
+
+<!-- 6. justify evenly : establishes equal empty space between and at the ends of each box-->
+<div class="flex flex-row justify-evenly">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+ 
+</div>
+
+<br>
+<br>
+<h4><strong>Justify In Column</strong></h4>
+<div class="bg-black h-2"></div>
+<br>
+<br>
+
+
+<!-- Along Column direction -->
+
+<!--  1. justify start -->
+<div class=" flex flex-col h-64 border-2  border-sky-500 justify-start">
   <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
   <div class="p-2 bg-blue-300">Block2 is here </div>
   <div class="p-2 bg-green-300">Block3 with some more</div>
@@ -24,7 +98,36 @@
 
 <br>
 
-<div class="flex flex-wrap">
+<!--  2. justify end -->
+<div class=" flex flex-col h-64 border-2  border-black justify-end">
+  <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
+  <div class="p-2 bg-blue-300">Block2 is here </div>
+  <div class="p-2 bg-green-300">Block3 with some more</div>
+  <div class="p-2 bg-red-300">Block4 red in color </div>
+</div>
+
+<br>
+
+<!--  3. justify between -->
+<div class=" flex flex-col h-64 border-2  border-sky-500 justify-between">
+  <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
+  <div class="p-2 bg-blue-300">Block2 is here </div>
+  <div class="p-2 bg-green-300">Block3 with some more</div>
+  <div class="p-2 bg-red-300">Block4 red in color </div>
+</div>
+
+<br>
+<!--  4. justify evenly -->
+<div class=" flex flex-col h-64 border-2  border-black justify-evenly">
+  <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
+  <div class="p-2 bg-blue-300">Block2 is here </div>
+  <div class="p-2 bg-green-300">Block3 with some more</div>
+  <div class="p-2 bg-red-300">Block4 red in color </div>
+</div>
+
+<br>
+<!--  5. justify around -->
+<div class=" flex flex-col h-60 border-2  border-sky-500 justify-around">
   <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
   <div class="p-2 bg-blue-300">Block2 is here </div>
   <div class="p-2 bg-green-300">Block3 with some more</div>
@@ -35,12 +138,6 @@
 
 
 
-
-
-
-
-
-</div>
 
 </body>
 </html>
