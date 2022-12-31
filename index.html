@@ -9,42 +9,35 @@
 <!-- Flex box Tutorial -->
 <body>
   
-<!-- By default it is row -->
 
-<div class="flex">
-  <div class="p-2 bg-yellow-300">Block1</div>
-  <div class="p-2 bg-blue-300">Block2</div>
-  <div class="p-2 bg-green-300">Block3</div>
-  <div class="p-2 bg-red-300">Block4</div>
+<!-- By default it is row and flex-nowrap -->
+
+<!-- flex-nowrap : it means it will compress the width of the elements and shift text accordingly
+     flex-warp : it means it will not compress width of the elements/itenms
+ -->
+
+<div class="flex flex-nowrap">
+  <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
+  <div class="p-2 bg-blue-300">Block2 is here </div>
+  <div class="p-2 bg-green-300">Block3 with some more</div>
+  <div class="p-2 bg-red-300">Block4 red in color </div>
 </div>
 
 <br>
 
-<div class="flex flex-row-reverse">
-  <div class="p-2 bg-yellow-300">Block1</div>
-  <div class="p-2 bg-blue-300">Block2</div>
-  <div class="p-2 bg-green-300">Block3</div>
-  <div class="p-2 bg-red-300">Block4</div>
-</div>
-
-<br>
-<div class="flex flex-col">
-  <div class="p-2 bg-yellow-300">Block1</div>
-  <div class="p-2 bg-blue-300">Block2</div>
-  <div class="p-2 bg-green-300">Block3</div>
-  <div class="p-2 bg-red-300">Block4</div>
+<div class="flex flex-wrap">
+  <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
+  <div class="p-2 bg-blue-300">Block2 is here </div>
+  <div class="p-2 bg-green-300">Block3 with some more</div>
+  <div class="p-2 bg-red-300">Block4 red in color </div>
 </div>
 
 <br>
 
-<div class="flex flex-col-reverse  ">
-  <div class="p-2 bg-yellow-300">Block1</div>
-  <div class="p-2 bg-blue-300">Block2</div>
-  <div class="p-2 bg-green-300">Block3</div>
-  <div class="p-2 bg-red-300">Block4</div>
-</div>
 
-<br>
+
+
+
 
 
 
