@@ -9,39 +9,61 @@
 <!-- Flex box Tutoria -->
 <body>
   
-<!-- Justify tutorial -->
+<!-- By default  *flex occupies whole row and column by content* and  *flex-row and flex-nowrap* and *items-stretch* -->
+<!-- Along row direction -->
+
 
 <br>
 <br>
-<h4><strong>Justify In Row</strong></h4>
+<h4><strong>Align In Row</strong></h4>
 <div class="bg-black h-2"></div>
 <br>
 <br>
 
-<!--  1. justify start -->
-<div class="flex flex-row justify-start">
-  <div class="p-2 bg-yellow-300">Block1 is </div>
-  <div class="p-2 bg-blue-300">Block2 </div>
+<!--  1. items stretch -->
+<div class="flex flex-row justify-between ">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300 text-5xl ">Block2 </div>
   <div class="p-2 bg-green-300">Block3 </div>
   <div class="p-2 bg-red-300">Block4 </div>
 </div>
 
 <br>
 
-<!-- 2. justify end : pushes at end -->
-<div class="flex flex-row justify-end">
+<!--  2. items start -->
+<div class="flex flex-row justify-between items-start ">
   <div class="p-2 bg-yellow-300">Block1 </div>
-  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-blue-300 text-5xl ">Block2 </div>
   <div class="p-2 bg-green-300">Block3 </div>
   <div class="p-2 bg-red-300">Block4 </div>
 </div>
 
 <br>
 
-<!-- 3. justify center :pushes boxes at center -->
-<div class="flex flex-row justify-center">
+<!--  3. items center -->
+<div class="flex flex-row justify-between items-center">
   <div class="p-2 bg-yellow-300">Block1 </div>
-  <div class="p-2 bg-blue-300">Block2 </div>
+  <div class="p-2 bg-blue-300 text-5xl ">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+  <div class="p-2 bg-red-300">Block4 </div>
+</div>
+
+<br>
+
+<!--  . items end -->
+<div class="flex flex-row justify-between items-end">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300 text-5xl ">Block2 </div>
+  <div class="p-2 bg-green-300">Block3 </div>
+  <div class="p-2 bg-red-300">Block4 </div>
+</div>
+
+<br>
+
+<!--  . items baseline : it brings all text to same base and items at end -->
+<div class="flex flex-row justify-between items-baseline">
+  <div class="p-2 bg-yellow-300">Block1 </div>
+  <div class="p-2 bg-blue-300 text-5xl ">Block2 </div>
   <div class="p-2 bg-green-300">Block3 </div>
   <div class="p-2 bg-red-300">Block4 </div>
 </div>
@@ -49,38 +71,10 @@
 <br>
 
 
-<!-- 4. justify between : establishes equal empty space between each box out of the space not occupied by the blocks-->
-<div class="flex flex-row justify-between">
-  <div class="p-2 bg-yellow-300">Block1 is a bit big  </div>
-  <div class="p-2 bg-blue-300">Block2 </div>
-  <div class="p-2 bg-green-300">Block3 </div>
-  <div class="p-2 bg-red-300">Block4 </div>
-</div>
-
-<br>
-
-<!-- 5. justify around : establishes equal empty space between each box out of the space not occupied by the blocks also at the start and end exaclty half the space between the blocks is left-->
-<div class="flex flex-row justify-around">
-  <div class="p-2 bg-yellow-300">Block1 </div>
-  <div class="p-2 bg-blue-300">Block2 </div>
-  <div class="p-2 bg-green-300">Block3 </div>
- 
-</div>
-
-<br>
-
-
-<!-- 6. justify evenly : establishes equal empty space between and at the ends of each box-->
-<div class="flex flex-row justify-evenly">
-  <div class="p-2 bg-yellow-300">Block1 </div>
-  <div class="p-2 bg-blue-300">Block2 </div>
-  <div class="p-2 bg-green-300">Block3 </div>
- 
-</div>
 
 <br>
 <br>
-<h4><strong>Justify In Column</strong></h4>
+<h4><strong>Align In Column</strong></h4>
 <div class="bg-black h-2"></div>
 <br>
 <br>
@@ -88,8 +82,8 @@
 
 <!-- Along Column direction -->
 
-<!--  1. justify start -->
-<div class=" flex flex-col h-64 border-2  border-sky-500 justify-start">
+<!--  1. items stretch-->
+<div class=" flex flex-col h-64 border-2  border-sky-500 justify-between ">
   <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
   <div class="p-2 bg-blue-300">Block2 is here </div>
   <div class="p-2 bg-green-300">Block3 with some more</div>
@@ -98,8 +92,8 @@
 
 <br>
 
-<!--  2. justify end -->
-<div class=" flex flex-col h-64 border-2  border-black justify-end">
+<!--  2. items start-->
+<div class=" flex flex-col h-64 border-2  border-sky-500 justify-between items-start ">
   <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
   <div class="p-2 bg-blue-300">Block2 is here </div>
   <div class="p-2 bg-green-300">Block3 with some more</div>
@@ -108,8 +102,8 @@
 
 <br>
 
-<!--  3. justify between -->
-<div class=" flex flex-col h-64 border-2  border-sky-500 justify-between">
+<!--  3. items center-->
+<div class=" flex flex-col h-64 border-2  border-sky-500 justify-between items-end ">
   <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
   <div class="p-2 bg-blue-300">Block2 is here </div>
   <div class="p-2 bg-green-300">Block3 with some more</div>
@@ -117,8 +111,9 @@
 </div>
 
 <br>
-<!--  4. justify evenly -->
-<div class=" flex flex-col h-64 border-2  border-black justify-evenly">
+
+<!--  4. items end-->
+<div class=" flex flex-col h-64 border-2  border-sky-500 justify-between items-center">
   <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
   <div class="p-2 bg-blue-300">Block2 is here </div>
   <div class="p-2 bg-green-300">Block3 with some more</div>
@@ -126,8 +121,8 @@
 </div>
 
 <br>
-<!--  5. justify around -->
-<div class=" flex flex-col h-60 border-2  border-sky-500 justify-around">
+<!--  5. items baseline : brings all text to same base and items at start -->
+<div class=" flex flex-col h-64 border-2  border-sky-500 justify-between items-baseline ">
   <div class="p-2 bg-yellow-300"> This is Block1 and tis quite long</div>
   <div class="p-2 bg-blue-300">Block2 is here </div>
   <div class="p-2 bg-green-300">Block3 with some more</div>
