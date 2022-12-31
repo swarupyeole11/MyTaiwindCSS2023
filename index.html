@@ -9,20 +9,41 @@
 <!-- Flex box Tutoria -->
 <body>
 
-<!-- Example for Flex direction column, justify-content, align-items, align-self -->
+<!--  grow    default : flex-grow-0 i.e do not grow unless mentioned -->
+<div class="flex items-stretch justify-between bg-gray-100">
+  <div class="bg-yellow-200 p-2">Block 1</div>
+  <div class="flex-grow bg-blue-200 p-2 text-5xl">Block 2</div>
+  <div class="bg-green-200 p-2">Block 3</div>
+  <div class="bg-red-200 p-2">Block 4</div>
+</div>
 
-<!-- self-auto : according to the parent -->
-<!-- self-center : element at center -->
-<!-- self-auto : element at end -->
-<!-- self-auto : according start -->
-<div class="h-80 bg-gray-100 flex flex-col justify-between items-stretch">
-  <div class="p-2 bg-yellow-200 self-start">Block 1 with some more content</div>
-  <div class="p-2 bg-blue-200 text-5xl self-end ">Block 2 text</div>
-  <div class="p-2 bg-green-200 self-center">Block 3</div>
-  <div class="p-2 bg-red-200 self-auto">Block 4 is important </div>
+<!-- shrink  default : flex-shrink i.e shrink yourself  -->
+<div class="flex items-stretch justify-between bg-gray-100">
+  <!-- It says no matter what keep the content in the same line even if it causes overflow  -->
+  <div class="flex-shrink-0 bg-yellow-200 p-2">Block 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt magnam, iusto illo dicta eligendi cum obcaecati iure nulla voluptate, suscipit, enim ipsam harum facilis quia ipsa asperiores eaque quidem.</div>
+  <div class="bg-blue-200 p-2 text-5xl">Block 2</div>
+  <div class="bg-green-200 p-2">Block 3</div>
+  <div class="bg-red-200 p-2">Block 4</div>
 </div>
 
 
+<!-- In this case you did not want your circle to be shirinking hence we stoped it from shrinking -->
+<div class="flex">
+  <div class="w-16 h-16 bg-cyan-400 rounded-full flex-shrink-0"></div>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius, deserunt, possimus dolore rerum dignissimos pariatur nemo dicta autem provident reiciendis culpa quisquam expedita nesciunt ratione eum? Repudiandae, optio ratione?</div>
+</div>
+
+
+<!-- NOTE IT IS BETTER TO USE GRID IN SUCH CASES -->
+<!-- something about flex property flex-1 sets flex-grow  flex-shrink  and  basis-0% -->
+
+<div class="flex items-stretch justify-between bg-gray-100">
+  <div class="bg-yellow-200 p-2 flex-1/4">Block 1</div>
+  <div class=" bg-blue-200 p-2 text-5xl flex-1/2">Block 2</div>
+  <div class="bg-green-200 p-2 flex-1/4">Block 3</div>
+  
+</div>
+ 
 
 
 </body>
