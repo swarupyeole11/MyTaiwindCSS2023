@@ -6,43 +6,85 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<!-- Flex box Tutoria -->
 <body>
 
-<!--  grow    default : flex-grow-0 i.e do not grow unless mentioned -->
-<div class="flex items-stretch justify-between bg-gray-100">
-  <div class="bg-yellow-200 p-2">Block 1</div>
-  <div class="flex-grow bg-blue-200 p-2 text-5xl">Block 2</div>
-  <div class="bg-green-200 p-2">Block 3</div>
-  <div class="bg-red-200 p-2">Block 4</div>
+
+
+<!-- this is the simple grid  -->
+<!-- repeat(3,minmax(0,1fr)) it means repeat three times and the size of each can vary from 0 to 1fr -->
+<div class="grid grid-cols-1 gap-6 md:grid-cols-4 sm:grid-cols-2">
+  <div class=" h-36  bg-slate-500 text-center">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
 </div>
 
-<!-- shrink  default : flex-shrink i.e shrink yourself  -->
-<div class="flex items-stretch justify-between bg-gray-100">
-  <!-- It says no matter what keep the content in the same line even if it causes overflow  -->
-  <div class="flex-shrink-0 bg-yellow-200 p-2">Block 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt magnam, iusto illo dicta eligendi cum obcaecati iure nulla voluptate, suscipit, enim ipsam harum facilis quia ipsa asperiores eaque quidem.</div>
-  <div class="bg-blue-200 p-2 text-5xl">Block 2</div>
-  <div class="bg-green-200 p-2">Block 3</div>
-  <div class="bg-red-200 p-2">Block 4</div>
+<br>
+<div class="h-2 bg-black"></div>
+<br>
+
+<!-- Horizontal aligining of elements along row -->
+<!-- for Horizontal alignment we use justify-items- by default tis justify-items stretch  -->
+<div class="grid grid-cols-3 gap-6 justify-items-stretch">
+  <div class=" h-36  bg-slate-500 text-center">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
 </div>
 
 
-<!-- In this case you did not want your circle to be shirinking hence we stoped it from shrinking -->
-<div class="flex">
-  <div class="w-16 h-16 bg-cyan-400 rounded-full flex-shrink-0"></div>
-  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius, deserunt, possimus dolore rerum dignissimos pariatur nemo dicta autem provident reiciendis culpa quisquam expedita nesciunt ratione eum? Repudiandae, optio ratione?</div>
+<br>
+<div class="h-2 bg-black"></div>
+<br>
+
+<!-- Vertical aligining along row -->
+<!-- Note that the alignemnt is happenig for each row . thus if we use items-center all the girds in that row will move to the center  
+     items-baseline : aligns along the text
+-->
+<!-- for Vertical alignment we use items- by default tis items-stretch  -->
+<div class=" min-h-screen grid grid-cols-3 gap-6 items-center">
+  <div class="  bg-slate-500 text-center">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
+  <div class=" h-36  bg-slate-500">Video</div>
 </div>
 
 
-<!-- NOTE IT IS BETTER TO USE GRID IN SUCH CASES -->
-<!-- something about flex property flex-1 sets flex-grow  flex-shrink  and  basis-0% -->
+<!-- Till now we saw how to do aligining within the fird cells now next we wil learn how to do aligin cells itself within the grid -->
+<br>
+<div class="h-2 bg-black"></div>
+<br>
 
-<div class="flex items-stretch justify-between bg-gray-100">
-  <div class="bg-yellow-200 p-2 flex-1/4">Block 1</div>
-  <div class=" bg-blue-200 p-2 text-5xl flex-1/2">Block 2</div>
-  <div class="bg-green-200 p-2 flex-1/4">Block 3</div>
-  
+<!-- for the alignment  of whole grid we use justify-() -->
+<div class=" min-h-screen grid grid-custom  justify-center  items-center  ">
+  <div class=" h-36  video">Video </div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
 </div>
+
+<br>
+<div class="h-2 bg-black"></div>
+<br>
+
+<!-- for the alignment of  rowa ingrid we use items-() -->
+<div class=" min-h-screen grid grid-custom  justify-center  items-center  ">
+  <div class=" h-36  video">Video </div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
+  <div class=" h-36  video">Video</div>
+</div>
+
  
 
 
